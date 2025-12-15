@@ -1,0 +1,23 @@
+<h2>Search Book</h2>
+
+<form method="POST">
+    Search term: <input name="term" required>
+    <button type="submit">Search</button>
+</form>
+
+{% if results %}
+    <h3>Results:</h3>
+    {% for r in results %}
+        <p>
+            <b>Title:</b> {{ r.title }} <br>
+            <b>Author:</b> {{ r.author }} <br>
+            <b>Category:</b> {{ r.category }} <br>
+            <b>Available:</b> {{ r.available }}
+        </p>
+        <hr>
+    {% endfor %}
+{% elif results is not none %}
+    <p style="color: red; font-weight: bold;">No matching book found.</p>
+{% endif %}
+
+<a href="/">Back</a>

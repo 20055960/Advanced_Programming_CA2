@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search Book</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; background-color: #fcfcfc; }
+        h2 { color: #2c3e50; }
+        input { padding: 8px; margin-bottom: 10px; width: 300px; }
+        button { padding: 10px 20px; background-color: #2980b9; color: white; border: none; border-radius: 3px; cursor: pointer; }
+        button:hover { background-color: #3498db; }
+        .book { border: 1px solid #ddd; padding: 15px; margin-bottom: 15px; border-radius: 5px; background-color: #fff; }
+        .back-link { margin-top: 20px; display: inline-block; color: #2980b9; text-decoration: none; }
+        .back-link:hover { text-decoration: underline; }
+        .error { color: red; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <h2>Search Book</h2>
+
+    <form method="POST">
+        Search term: <input name="term" required>
+        <button type="submit">Search</button>
+    </form>
+
+    {% if results %}
+        <h3>Results:</h3>
+        {% for r in results %}
+            <div class="book">
+                <b>Title:</b> {{ r.title }} <br>
+                <b>Author:</b> {{ r.author }} <br>
+                <b>Category:</b> {{ r.category }} <br>
+                <b>Available:</b> {{ r.available }}
+            </div>
+        {% endfor %}
+    {% elif results is not none %}
+        <p class="error">No matching book found.</p>
+    {% endif %}
+
+    <a class="back-link" href="/">Back</a>
+</body>
+</html>

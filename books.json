@@ -1,0 +1,134 @@
+[
+    {
+        "author": "Roger Burke",
+        "title": "Rose",
+        "category": "Romance",
+        "available": true
+    },
+    {
+        "author": "David Ram",
+        "title": "Yellow",
+        "category": "Fiction",
+        "available": true
+    },
+    {
+        "author": "Angela Gill",
+        "title": "Ruby",
+        "category": "Fiction",
+        "available": true
+    },
+    {
+        "author": "Shalome Glory",
+        "title": "Money Talks",
+        "category": "Fiction",
+        "available": true
+    },
+    {
+        "author": "Joe Young",
+        "title": "Arrow",
+        "category": "Comedy",
+        "available": true
+    },
+    {
+        "author": "James Pop",
+        "title": "Name the Namer",
+        "category": "Fiction",
+        "available": true
+    },
+    {
+        "author": "Alice Young",
+        "title": "Step sister",
+        "category": "Comedy",
+        "available": true
+    },
+    {
+        "author": "Tim Red",
+        "title": "Host",
+        "category": "Comedy",
+        "available": true
+    },
+    {
+        "author": "Yunal Noah Harari",
+        "title": "Sapiens: A Brief History of Humankind",
+        "category": "History",
+        "available": true
+    },
+    {
+        "author": "Daniel Kahneman",
+        "title": "Thinking, Fast and Slow",
+        "category": "Psychology",
+        "available": true
+    },
+    {
+        "author": "Richard Dawkins",
+        "title": "The Selfish Gene",
+        "category": "Evolutionary Biology",
+        "available": true
+    },
+    {
+        "author": "Tara Westover",
+        "title": "Educated",
+        "category": "Social Issues",
+        "available": true
+    },
+    {
+        "author": "Stephen R. Covey",
+        "title": "The 7 Habits of Highly Effective People",
+        "category": "Personal Development",
+        "available": true
+    },
+    {
+        "author": "Eric Matthes",
+        "title": "Python Crash Course",
+        "category": "Computer Programming",
+        "available": true
+    },
+    {
+        "author": "Carl Sagan",
+        "title": "Cosmos",
+        "category": "Science",
+        "available": true
+    },
+    {
+        "author": "Jared Diamond",
+        "title": "Guns, Germs, and Steel",
+        "category": "Geography / Anthropology",
+        "available": true
+    },
+    {
+        "author": "Malcolm Gladwell",
+        "title": "Outliers",
+        "category": "Sociology",
+        "available": true
+    },
+    {
+        "author": "Howard Zinn",
+        "title": "A People\\u2019s History of the United States",
+        "category": "History",
+        "available": true
+    },
+    {
+        "author": "Ben Goldacre",
+        "title": "Bad Science",
+        "category": "Science / Critical Thinking",
+        "available": true
+    },
+    {
+        "author": "Michio Kaku",
+        "title": "Physics of the Impossible",
+        "category": "Physics",
+        "available": true
+    },
+    {
+        "author": "Mary Roach",
+        "title": "Gulp: Adventures on the Alimentary Canal",
+        "category": "Biology / Anatomy",
+        "available": true
+    },
+    {
+        "author": "Wendy Smith",
+        "title": "Happy Days",
+        "category": "Fiction",
+        "available": true
+    }
+]

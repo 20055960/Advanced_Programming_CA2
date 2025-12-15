@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>All Books</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; background-color: #fdfdfd; }
+        h2 { color: #2c3e50; }
+        .book { border: 1px solid #ddd; padding: 15px; margin-bottom: 15px; border-radius: 5px; background-color: #fff; }
+        .back-link { margin-top: 20px; display: inline-block; color: #2980b9; text-decoration: none; }
+        .back-link:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <h2>All Books</h2>
+
+    {% if books %}
+        {% for b in books %}
+            <div class="book">
+                <b>Title:</b> {{ b.title }} <br>
+                <b>Author:</b> {{ b.author }} <br>
+                <b>Category:</b> {{ b.category }} <br>
+                <b>Available:</b> {{ b.available }}
+            </div>
+        {% endfor %}
+    {% else %}
+        <p style="color: red; font-weight: bold;">No books available in the library.</p>
+    {% endif %}
+
+    <a class="back-link" href="/">Back</a>
+</body>
+</html>

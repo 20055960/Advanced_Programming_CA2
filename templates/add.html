@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Book</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; background-color: #fefefe; }
+        h2 { color: #2c3e50; }
+        form { margin-top: 20px; }
+        input { padding: 8px; margin-bottom: 10px; width: 300px; }
+        button { padding: 10px 20px; background-color: #27ae60; color: white; border: none; border-radius: 3px; cursor: pointer; }
+        button:hover { background-color: #2ecc71; }
+        .back-link { margin-top: 20px; display: inline-block; color: #2980b9; text-decoration: none; }
+        .back-link:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <h2>Add Book</h2>
+
+    <form method="POST">
+        Author: <input name="author" required><br>
+        Title: <input name="title" required><br>
+        Category: <input name="category" required><br>
+        <button type="submit">Add Book</button>
+    </form>
+
+    {% if message %}
+        <p style="color: green; font-weight: bold;">{{ message }}</p>
+    {% endif %}
+
+    <a class="back-link" href="/">Back</a>
+</body>
+</html>
